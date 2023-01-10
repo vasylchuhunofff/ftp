@@ -1,0 +1,71 @@
+{
+  "data": [
+    {
+      "merchant": "Просто тхт",
+      "terminal": "1200",
+      "mail": "asasins1020@gmail.com",
+      "editor": "Чугунов",
+      "coment": "",
+      "exel": "txt",
+      "check": "empty",
+      "id": 1
+    },
+    {
+      "merchant": "Просто ексель",
+      "terminal": "1200",
+      "mail": "asasins1020@gmail.com",
+      "editor": "Чугунов",
+      "coment": "",
+      "exel": "exel",
+      "check": "empty",
+      "id": 2
+    },
+    {
+      "merchant": "Ексель с подсчетом комисии",
+      "terminal": "1200",
+      "mail": "asasins1020@gmail.com",
+      "editor": "Чугунов",
+      "coment": "",
+      "exel": "exel",
+      "check": "calculate",
+      "id": 3
+    }
+  ],
+  "history": [
+    {
+      "mail": "w.w.chugunov@gmail.com v.chumakovv@gmail.com",
+      "terminal": "TE1308 TE1200",
+      "exel": "exel",
+      "id": 2,
+      "date": "2022-11-11T14:13:24.539Z"
+    },
+    {
+      "mail": "v.chumakovv@gmail.com",
+      "terminal": "TE1308",
+      "exel": "exel",
+      "id": 5,
+      "date": "2022-11-11T14:37:59.449Z"
+    },
+    {
+      "mail": "v.chumakovv@gmail.com",
+      "terminal": "TE1308",
+      "exel": "exel",
+      "id": 6,
+      "date": "2022-11-12T08:54:32.543Z"
+    },
+    {
+      "mail": "asasins1020@gmail.com",
+      "terminal": "1200",
+      "exel": "txt",
+      "id": 3,
+      "date": "2023-01-09T21:28:29.058Z"
+    },
+    {
+      "mail": "asasins1020@gmail.com",
+      "terminal": "1200",
+      "exel": "txt",
+      "id": 1,
+      "date": "2023-01-09T21:29:24.828Z"
+    }
+  ]
+}

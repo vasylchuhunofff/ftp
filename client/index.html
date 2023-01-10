@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="">
+</head>
+<body>
+    <!-- use version 0.18.12 -->
+    <header class="header">
+        <div class="conainer">
+            <div class="header__inner">
+                <menu class="menu">
+                    <div class="tab">
+                        <button class="tablinks menu-styles" onclick="openTab(event, 'list')" id="defaultOpen">Все марчанты</button>
+                        <button class="tablinks menu-styles" onclick="openTab(event, 'Adding')" >Добавить мерчанта</button>
+                        <button class="tablinks menu-styles" onclick="openTab(event, 'sitings')" >Настройки</button>
+                        <button class="tablinks menu-styles" onclick="openTab(event, 'arhive')" >Архив</button>
+                        <!-- <input type="file" id="dir-selector" multiple placeholder="Путь к папке"> -->
+                        <button class="sitings-path">Отправить реестры</button>
+                    </div>
+                </menu>
+                <div class="content">
+
+
+
+
+
+
+
+                    
+                <!-- Редактирование марчанта  -->
+                <div class="AddingMerchant-box">
+                    <!-- <div class="adding-box">
+                        <form action="" id="create">
+                            <input required type="text" name="kompany" placeholder="Компания">
+                            <input required type="text" name="terminal" placeholder="Терминалы">
+                            <input required type="text" name="mail" placeholder="Почты">
+
+                            <div class="check-excel">
+                                <div>Выбирите формат отправки файла</div>
+                                <select name="exel" id="exel" class="exel" title="">
+                                    <option value="exel">exel</option>
+                                    <option value="txt">txt</option>
+                                </select>
+                            </div>
+                            <select name="autor" id="autor" class="autor">
+                                <option value="">Выберите редактора</option>
+                                <option value="Чугунов">Чугунов</option>
+                                <option value="Шлапак">Шлапак</option>
+                                <option value="Гармаш">Гармаш</option>
+                            </select>
+                            <div class="coment">
+                                <textarea class="coment" name="" id="" cols="30" rows="4"></textarea>
+                            </div>
+                            <div class="create-buttom">
+                                <button type="submit" id="" onclick="Toggle()">Сохранить</button>
+                            </div>
+                        </form>
+                    </div>      -->
+                </div>
+                <!-- Редактирование марчанта  -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="content__inner">
+                        <div class="tabcontent" id="list">
+                            <div class="search-box">
+                                <input type="text" name="" id="" placeholder="Название компании">
+                                <input type="text" name="search-terminal-box" id="" placeholder="Терминал">
+                                <input type="text" name="" id="" placeholder="Почта">
+                                <button>Поиск</button>
+                            </div>
+                            <div class="wraper__info-box container-terminals">
+ <!-- Лист мерчантов  -->
+                                <!-- <div class="info-box" id="info-box">
+                                    <ul class="info-box__list">
+                                        <div class="merchant-box">
+                                            <p>Торговец</p>
+                                            <ul>
+                                                <li></li>
+                                            </ul>
+                                        </div>
+                                        <div  class="terminal-box">
+                                            <p>Терминалы</p>
+                                            <ul>
+                                                <li></li>
+                                            </ul>
+                                        </div>
+                                        <div  class="format-box">
+                                            <p>Формат фалйа</p>
+                                            <ul>
+                                                <li></li>
+                                            </ul>
+                                        </div>
+                                        <div  class="posht-box">
+                                            <p>Почта</p>
+                                            <ul>
+                                                <li></li>
+                                            </ul>
+                                        </div>
+                                        <div  class="editor-box">
+                                            <p>Редактор</p>
+                                            <ul>
+                                                <li></li>
+                                            </ul>
+                                        </div>
+                                        <div  class="coment-box">
+                                            <p>Коментарий</p>
+                                            <ul>
+                                                <li></li>
+                                            </ul>
+                                        </div>
+                                    </ul>
+                                    <div class="info-box__sitings">
+                                        <button class="info-box__adding" id="adding">Редактировать</button>
+                                        <button class="delete  info-box__delete" type="submit">Удалить</button>
+                                        <button class="send info-box__send" id="send">отправить</button>
+                                    </div>
+                                </div> -->
+
+
+
+
+
+
+<!-- Лист мерчантов  -->
+                            </div>
+                        </div>
+                        <div class="tabcontent" id="Adding">
+                            <div class="adding__inner">
+<!-- Добавить мерчанта -->
+                                <div class="adding-box">
+                                    <form action="" id="create">
+                                        <input required type="text" name="kompanys" placeholder="Компания">
+                                        <input required type="text" name="terminals" placeholder="Терминалы" class="search-terminal">
+                                        <input required type="email" name="mails" placeholder="Почты" class="search-mail">
+
+                                        <div class="check-excel">
+                                            <div>Выбирите формат отправки файла</div>
+                                            <select name="exel" id="exel" class="exel" title="">
+                                                <option value="exel">exel</option>
+                                                <option value="txt">txt</option>
+                                            </select>
+                                        </div>
+                                        <!-- Формирование суммы -->
+                                        <select name="summcheckbox" id="summcheckbox" class="summcheckbox" title="">
+                                            <option value="calculate">calculate</option>
+                                            <option value="empty">empty</option>
+                                        </select>
+                                        
+
+                                        <!-- Формирование суммы -->
+                                        <select name="autor" id="autor" class="autor">
+                                            <option value="">Выберите редактора</option>
+                                            <option value="Чугунов">Чугунов</option>
+                                            <option value="Шлапак">Шлапак</option>
+                                            <option value="Гармаш">Гармаш</option>
+                                        </select>
+                                        <div class="coment">
+                                            <textarea class="coment" name="" id="" cols="30" rows="4"></textarea>
+                                        </div>
+                                        <div class="create-buttom">
+                                            <button type="submit" id="create-terminal">Добавить отправку</button>
+                                        </div>
+                                    </form>
+                                </div>
+<!-- Добавить мерчанта -->
+                            </div>
+                        </div>
+                        <div class="tabcontent" id="sitings">
+                            
+                        </div>
+                        <div class="tabcontent" id="arhive" style="background: #36404A; color: white">
+                            <div class="arhive-item" style="justify-items: center;">
+                                <!-- <p>
+                                    отправлено санрайз ТЕ1200, ТЕ1185, ТЕ1456 sinrase@gmail.com supportsinrase@gmail.com, salesinrase@gmail.com 10.04.1022 08:21
+                                </p>
+                                <p>
+                                    отправлено санрайз ТЕ1200, ТЕ1185, ТЕ1456 sinrase@gmail.com supportsinrase@gmail.com, salesinrase@gmail.com 10.04.1022 08:21
+                                </p>
+                                <p>
+                                    отправлено санрайз ТЕ1200, ТЕ1185, ТЕ1456 sinrase@gmail.com supportsinrase@gmail.com, salesinrase@gmail.com 10.04.1022 08:21
+                                </p>
+                                <p>
+                                    отправлено санрайз ТЕ1200, ТЕ1185, ТЕ1456 sinrase@gmail.com supportsinrase@gmail.com, salesinrase@gmail.com 10.04.1022 08:21
+                                </p>
+                                <p>
+                                    отправлено санрайз ТЕ1200, ТЕ1185, ТЕ1456 sinrase@gmail.com supportsinrase@gmail.com, salesinrase@gmail.com 10.04.1022 08:21
+                                </p> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <script src=""></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.1.3/axios.min.js" integrity="sha512-0qU9M9jfqPw6FKkPafM3gy2CBAvUWnYVOfNPDYKVuRTel1PrciTj+a9P3loJB+j0QmN2Y0JYQmkBBS8W+mbezg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script lang="javascript" src="https://cdn.sheetjs.com/xlsx-0.18.12/package/dist/xlsx.full.min.js"></script>  <!-- use version 0.18.12 -->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="./js/main.js"></script>
+<script src="./script/script.js"></script>
+<!-- <script src="./script/Sender.js"></script> -->
+</body>
+</html>
